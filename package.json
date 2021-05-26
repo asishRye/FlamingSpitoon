@@ -1,12 +1,13 @@
 {
   "name": "flaming-spitoon",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "electron+angular": "ng build && electron .",
+    "electron": "electron .",
+    "angular": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "electron-package": "ng build && electron-packager . --no-prune --ignore=/node_modules --ignore=/e2e --ignore=/src --overwrite"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +29,7 @@
     "@angular/compiler-cli": "~12.0.1",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "electron": "^13.0.1",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
