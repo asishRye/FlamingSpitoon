@@ -13,11 +13,10 @@
 ## To get started
 
 1. Start a new angular project <br>
-   Pro tip -> Always start with angular first
    ```bash
        ng new projectName --skip-git
    ```
-2. Make sure angular is up and running by running
+2. Make sure angular is up by running
 
    ```bash
        ng serve
